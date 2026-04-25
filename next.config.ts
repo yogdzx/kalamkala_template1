@@ -5,13 +5,8 @@ const nextConfig: NextConfig = {
   experimental: {
     forceSwcTransforms: false,
   },
-  
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-    };
-    return config;
-  },
+
+  turbopack: {}, 
 };
 
 export default nextConfig;
